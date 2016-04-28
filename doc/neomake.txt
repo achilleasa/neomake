@@ -261,6 +261,9 @@ create new ones.
 Shows the output returned by |neomake#statusline#LoclistStatus| in the warning
 section of the vim-airline |statusline|. Defaults to 1.
 
+g:neomake_always_use_quickfix
+Always use quickfix list event when operating on a single file.
+
 ==============================================================================
 4. Functions                                                 *neomake-functions*
 

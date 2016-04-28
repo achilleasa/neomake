@@ -515,7 +515,7 @@ function! neomake#MakeHandler(job_id, data, event_type) abort
             let height = get(g:, 'neomake_list_height', 10)
             let open_val = g:neomake_open_list
             let win_val = winnr()
-            if get(maker, 'file_mode')
+            if get(maker, 'file_mode') && !get(g:, 'neomake_always_use_quickfix')
                 " Go to job's window if it is not current.
                 " This uses window-local variables, because window numbers
                 " might change when opening the location list window.
